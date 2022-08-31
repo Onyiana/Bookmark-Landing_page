@@ -466,6 +466,10 @@ hr{
         padding: 20px 2rem;
     }
 
+    .bookmarkSection p{
+        font-size: 15px;
+    }
+
     .features {
         width: 70%;
         margin-top: 70px;
