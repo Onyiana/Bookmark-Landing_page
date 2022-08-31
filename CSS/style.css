@@ -34,6 +34,10 @@ ul{
     list-style: none;
 }
 
+h1, h3{
+    color: var(--Dark-Blue);
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -48,6 +52,10 @@ ul{
     gap: 50px;
     font-size: 12px;
     font-weight: 700;
+}
+
+.navlinks a{
+    color: var(--Dark-Blue);
 }
 
 .navlinks a:hover{
@@ -93,6 +101,7 @@ ul{
 
 .bookmarkSection p{
     margin: 20px 0;
+    color: var(--Grayish-Blue);
 }
 
 .bookmarkImage img {
@@ -158,6 +167,7 @@ ul{
 
 .features p {
     margin: 20px 0;
+    color: var(--Grayish-Blue);
 }
 
 .horizontalRule{
@@ -201,6 +211,7 @@ hr{
 
 .secondSectionText p {
     margin: 20px 0;
+    color: var(--Grayish-Blue);
 }
 
 .secondSectionText button {
@@ -230,6 +241,7 @@ hr{
 
 .thirdSection p{
    margin: 20px 0;
+   color: var(--Grayish-Blue);
 }
 
 .thirdSectionExtensions {
@@ -312,6 +324,7 @@ hr{
 
 .frequent p {
    margin: 20px 0;
+   color: var(--Grayish-Blue);
 }
 
 .horizontalline {
@@ -331,6 +344,7 @@ hr{
 
 .Asked  p{
     margin: 20px 0;
+    color: var(--Grayish-Blue);
 }
 
 .Asked h3:hover{
