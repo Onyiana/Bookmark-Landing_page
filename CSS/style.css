@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Dark-Blue: hsl(229, 31%, 21%)
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.blur{
+    filter: blur(3px);
+}
+
+.hideScroll{
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5rem;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.navlinks a:hover{
+    color: var(--Soft-Red);
+}
+
+.navlinks button {
+    background-color: var(--Soft-Red);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.navlinks button:hover {
+    background-color:#fff ;
+    color: var(--Soft-Red);
+    border: 1px solid var(--Soft-Red);
+}
+
+.bookmarkSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 5rem;
+}
+
+.bookmarkSection h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.mainTxt {
+    display: block;
+}
+
+.subTxt{
+    display: block;
+}
+
+.bookmarkSection p{
+    margin: 20px 0;
+}
+
+.bookmarkImage img {
+    width: 110%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookmarkBtn{
+    display: flex;
+    gap: 15px;
+}
+
+.bookmarkBtn1{
+    background-color: var(--Soft-Blue);
+    box-shadow: 1px 2px 1px rgb(224, 221, 221);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bookmarkBtn1:hover{
+    background-color: #fff;
+    border: 1px solid var(--Soft-Blue);
+    color: var(--Soft-Blue);
+}
+
+.bookmarkBtn2{
+    background-color: rgb(236, 234, 234);
+    box-shadow: 1px 2px 1px rgb(224, 221, 221);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: var(--Dark-Blue);
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bookmarkBtn2:hover{
+    background-color: #fff;
+    border: 1px solid var(--Dark-Blue);
+}
+
+.features {
+   text-align: center;
+   justify-content: center;
+   width: 40%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.features h1{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.features p {
+    margin: 20px 0;
+}
+
+.horizontalRule{
+    display: none;
+}
+
+.featuresTour {
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    gap: 60px;
+}
+
+hr{
+    display: none;
+}
+
+.featuresTour h4:hover {
+    color: var(--Soft-Red);
+}
+
+.secondSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px  5rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 150px;
+}
+
+.secondSection img {
+    width: 110%;
+}
+
+.secondSectionText h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.secondSectionText p {
+    margin: 20px 0;
+}
+
+.secondSectionText button {
+    background-color: var(--Soft-Blue);
+    box-shadow: 1px 2px 1px rgb(224, 221, 221);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#thirdPage {
+    padding: 80px 0;
+}
+
+.thirdSection{
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thirdSection p{
+   margin: 20px 0;
+}
+
+.thirdSectionExtensions {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.thirdSectionExtensions button{
+    background-color: var(--Soft-Blue);
+    box-shadow: 1px 2px 1px rgb(185, 185, 185);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.thirdSectionExtensions button:hover{
+    background-color: #fff;
+    border:1px solid var(--Soft-Blue);
+    color: var(--Soft-Blue);
+}
+
+.extensionsImg{
+    width: 25%;
+    margin: 10px 0;
+}
+/* this was used to style the card */
+.thirdSectionCard {
+    background-color: #fff;
+    box-shadow: 3px 3px 8px rgb(233, 233, 233);
+    padding: 50px 0;
+    width: 20%;
+    height: 50%;
+    display: inline-block;
+}
+
+.thirdSectionCard:nth-child(2) {
+  margin-top: 35px;
+}
+
+.thirdSectionCard:last-child{
+    margin-top: 70px;
+}
+
+/* This was used to style the FAQ */
+#questions {
+    padding: 40px 0;
+}
+
+.qus-btn{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.qus-btn button{
+    background-color: var(--Soft-Blue);
+    box-shadow: 1px 2px 1px rgb(224, 221, 221);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer; 
+}
+
+.frequent {
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frequent p {
+   margin: 20px 0;
+}
+
+.horizontalline {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Asked {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.Asked  p{
+    margin: 20px 0;
+}
+
+.Asked h3:hover{
+    color: var(--Soft-Red);
+}
+
+.accordion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordionBtnClose, .accordionBtnClose1, .accordionBtnClose2{
+    display: none;
+}
+
+.answered, .answered1, .answered2{
+    display: none;
+}
+
+.fourthSection {
+    text-align: center;
+    justify-content: center;
+    padding: 30px 0;
+    color: #fff;
+    background-color: var(--Soft-Blue);
+}
+
+.fourthSectionText h1{
+    margin: 20px 0;
+}
+
+.fourthSectionText p{
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+.fourthSection-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.fourthSection-btn input[type="email"] {
+    padding: 10px  30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.fourthSection-btn button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--Soft-Red);
+    cursor: pointer;
+}
+
+.fourthSection-btn button:hover {
+    background-color: #fff;
+    color: var(--Soft-Red);
+    border: 1px solid var(--Soft-Red);
+}
+
+.footerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--Dark-Blue);
+    padding: 20px 3rem;
+}
+
+.footerSectionMenu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footerLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-weight: 700;
+}
+
+.footerLinks a{
+    color: #fff;
+}
+
+.footerLinks a:hover{
+    color: var(--Soft-Red);
+}
+
+.footerSectionMedia a{
+    margin-right: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.footerSectionMedia a:hover{
+    color: var(--Soft-Red);
+}
+
+/* This was used to style the toggler */
+.hamburger{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#102334;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:992px) {
+    .navbar {
+        padding: 20px 2rem;
+    }
+
+    .features {
+        width: 70%;
+        margin-top: 70px;
+    }
+
+    .featuresTour {
+        margin: 50px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .bookmarkSection {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bookmarkBtn {
+        text-align:center ;
+        justify-content: center;
+    }
+
+    .bookmarkImage img {
+        width: 100%;
+    }
+    
+    .features {
+        width: 70%;
+        margin-top: 70px;
+    }
+
+    .featuresTour {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .horizontalRule{
+        display: block;
+    }
+
+    hr{
+        display: block;
+    }
+    
+    .secondSection {
+        flex-direction: column;
+        padding: 50px  3rem;
+        gap: 90px;
+        width: 70%;
+    }
+
+    .secondSection img {
+        width: 100%;
+    }
+
+    .secondSectionText {
+        text-align: center;
+    }
+
+    .thirdSectionExtensions {
+       flex-direction: column;
+       align-items: center;
+       width: 70%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .thirdSectionCard {
+        width: 50%;
+    }
+
+    .thirdSectionCard:nth-child(2) {
+        margin-top: 0px;
+    }
+      
+    .thirdSectionCard:last-child{
+        margin-top: 0px;
+    }
+
+    .frequent {
+        width: 70%;
+    }
+
+    .fourthSection h1{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footerSection {
+        flex-direction: column;
+    }
+
+    .footerSectionMenu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerSectionMenu a {
+        font-size: 16px;
+    }
+
+    .footerLinks {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    /* This is used to style the navigation bar */
+    .hamburger{
+        display: block;
+        font-size: 25px;
+    }
+
+    .ri-close-circle-fill{
+        display: none;
+    }
+
+    /* Styling the navlinks and navbar on smaller screen. */
+    .navlinks{
+        background-color: var(--Grayish-Blue);
+        flex-direction: column;
+        position: absolute;
+        width: 300px;
+        top: 38%;
+        right: -50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        gap: 30px;
+        padding: 4rem 2rem;
+        transition: .5s;
+        border-radius: 10px;
+    }
+
+    .navlinks a{
+      color: var(--Dark-Blue);
+      font-weight: 600;
+      font-size: 15px;  
+    }
+
+    .navbar {
+        padding: 10px 1rem;
+        gap: 9rem;
+    }
+
+} 
+
+@media screen and (max-width:576px) {
+    .bookmarkSection {
+        width: 100%;
+        padding: 5rem  3rem;
+    }
+
+    .bookmarkImage img {
+        width: 100%;
+    }
+
+    .secondSection {
+        width: 100%;
+    }
+
+    .thirdSection {
+        width: 80%;
+    }
+
+    .Asked{
+        width: 70%;
+    }
+
+    .horizontalline{
+        width: 70%;
+    }
+
+    .fourthSection-btn{
+        flex-direction: column;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .bookmarkSection { 
+        padding: 5rem  1rem;
+    }
+
+    .features{
+        width: 90%;
+    }
+
+    .secondSection {
+        padding: 50px 1.5rem;
+    }
+
+    .thirdSection {
+        width: 90%;
+    }
+
+    .thirdSectionExtensions {
+        width: 100%;
+    }
+
+    .thirdSectionCard {
+        width: 65%;
+    }
+
+    .frequent{
+        width: 90%;
+    }
+
+    .Asked{
+        width: 85%;
+        font-size: 13px;
+    }
+
+    .horizontalline{
+        width: 85%;
+    }
+
+    .fourthSection-btn{
+        width: 70%;
+    }
+
+    .footerLinks{
+        font-weight: 400;
+    }
+
+    .footerLinks a{
+        font-size: 15px;
+    }
+
+    .footerSectionMedia {
+        margin-top: 10px;
+    }
+
+    .footerSectionMedia a{
+        margin-left: 20px;
+    }
+}
