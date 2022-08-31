@@ -1,4 +1,4 @@
-const accordionBtn = document.querySelectorAll('.accordionBtn')
+const accordionBtn = document.querySelectorAll('.accordion')
 
 accordionBtn.forEach(element => {
     element.addEventListener('click', function(){
@@ -22,30 +22,34 @@ const menuClose = document.querySelector('.ri-close-circle-fill')
 const navMenu = document.querySelector('.navlinks')
 const wraper = document.querySelector('.wraper')
 const html = document.querySelector('html')
+const logoImage = document.querySelector('.logoImage')
 
 menuOpen.addEventListener('click', function(){
-    navMenu.style.left = '50%'
+    navMenu.style.top = '0'
     menuOpen.style.display = 'none'
     menuClose.style.display = 'block'
     wraper.classList.add('blur')
     html.classList.add('hideScroll')
+    logoImage.style.display = 'none'
 })
 
 menuClose.addEventListener('click', function(){
-    navMenu.style.left = '-50%'
+    navMenu.style.top = '-1000px'
     menuOpen.style.display = 'block'
     menuClose.style.display = 'none'
     wraper.classList.remove('blur')
     html.classList.remove('hideScroll')
+    logoImage.style.display = 'block'
 })
 
 const navLists = document.querySelectorAll('li')
 navLists.forEach((element) => {
     element.addEventListener('click', function(){
-        navMenu.style.left = '-50%'
-        menuClose.style.display = 'none'
+        navMenu.style.top = '-1000px'
         menuOpen.style.display = 'block'
-        html.classList.remove('hideScroll')
+        menuClose.style.display = 'none'
         wraper.classList.remove('blur')
+        html.classList.remove('hideScroll')
+        logoImage.style.display = 'block'
     })
 })

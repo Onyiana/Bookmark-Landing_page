@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 :root{
@@ -12,7 +13,6 @@
 }
 
 html, body {
-    font-family: 'Lato', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -52,6 +52,10 @@ h1, h3{
     gap: 50px;
     font-size: 12px;
     font-weight: 700;
+}
+
+.navlinks div{
+    display: none;
 }
 
 .navlinks a{
@@ -604,37 +608,69 @@ hr{
     }
 
     .ri-close-circle-fill{
-        display: none;
+        font-size: 1.5rem;
+        color: #fff;
     }
 
     /* Styling the navlinks and navbar on smaller screen. */
     .navlinks{
-        background-color: var(--Grayish-Blue);
-        flex-direction: column;
+        background-color: hsla(228, 32%, 16%, 0.932);
+        display: block;
+        text-align: center;
         position: absolute;
-        width: 300px;
-        top: 38%;
-        right: -50%;
-        left: -50%;
-        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100vh;
+        top: -1000px;
+        left: 0;
         z-index: 1;
-        gap: 30px;
-        padding: 4rem 2rem;
+        padding: 1rem  2rem;
         transition: .5s;
-        border-radius: 10px;
+
+    }
+
+    .navlinks div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
     }
 
     .navlinks a{
-      color: var(--Dark-Blue);
-      font-weight: 600;
-      font-size: 15px;  
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        display: inline-block;
+        border-top: 1px solid white ;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .navlinks a:hover{
+        color: var(--Soft-Red);
+    }
+
+    .navlinks button{
+        background-color: transparent;
+        font-size: 17px;
+        font-weight: 700;
+        border: 1px solid white;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .navlinks button:hover{
+        background-color: #fff;
+        color: var(--Soft-Red);
+        border: none;
     }
 
     .navbar {
+        display: flex;
+        align-items: center;
         padding: 10px 1rem;
         gap: 9rem;
     }
-
+    /* It stops here */
 } 
 
 @media screen and (max-width:576px) {
