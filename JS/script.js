@@ -1,28 +1,30 @@
-const accordionBtn = document.querySelectorAll('.accordion')
-
-accordionBtn.forEach(element => {
-    element.addEventListener('click', function(){
-        const id = element.getAttribute('id')
-        const ansClass = `answered${id}`
-        const answered = document.getElementById(ansClass)
-        if (answered.style.display === 'block') {
-            element.innerHTML = '<i class="accordionBtn" id="1"><button style="cursor: pointer;">Open</button></i>'
-            answered.style.display = 'none'
-        }else {
-            element.innerHTML = '<i class="accordionBtn" id="1"><button style="cursor: pointer;">Close</button></i>'
-            answered.style.display = 'block'
-        }
-    })
-});
-
-
-// This was used to add click event on the toggler and also a blur
 const menuOpen = document.querySelector('.ri-menu-add-line')
 const menuClose = document.querySelector('.ri-close-circle-fill')
 const navMenu = document.querySelector('.navlinks')
 const wraper = document.querySelector('.wraper')
 const html = document.querySelector('html')
 const logoImage = document.querySelector('.logoImage')
+const accordionBtn = document.querySelectorAll('.Asked')
+const navLists = document.querySelectorAll('li')
+const arrowDropDown = document.querySelectorAll('.ri-arrow-drop-down-line')
+console.log(arrowDropDown)
+
+accordionBtn.forEach(element => {
+    element.addEventListener('click', function(){
+        element.classList.toggle("showFaq")
+        // arrowDropDown.
+    })
+});
+
+accordionBtn.forEach(e => {
+    e.addEventListener('click', function(){
+        e.classList.toggle('rotateArrow')
+    })
+})
+
+
+// This was used to add click event on the toggler and also a blur
+
 
 menuOpen.addEventListener('click', function(){
     navMenu.style.top = '0'
@@ -42,7 +44,7 @@ menuClose.addEventListener('click', function(){
     logoImage.style.display = 'block'
 })
 
-const navLists = document.querySelectorAll('li')
+
 navLists.forEach((element) => {
     element.addEventListener('click', function(){
         navMenu.style.top = '-1000px'

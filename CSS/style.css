@@ -457,7 +457,7 @@ hr{
 }
 
 /* This was used to style the toggler */
-.hamburger{
+.ri-menu-add-line{
     font-size: 25px;
     cursor: pointer;
     display: none;
@@ -477,6 +477,15 @@ hr{
     cursor: pointer;
     padding: 7px;
     border-radius: 4px;
+}
+
+.Asked.showFaq .answered{
+    display: block;
+}
+
+.Asked.rotateArrow .ri-arrow-drop-down-line{
+    transform: rotate(180deg);
+    transition: .5s;
 }
 
 @media screen and (max-width:992px) {
@@ -602,7 +611,7 @@ hr{
     }
     
     /* This is used to style the navigation bar */
-    .hamburger{
+    .ri-menu-add-line{
         display: block;
         font-size: 25px;
     }
@@ -668,7 +677,8 @@ hr{
         display: flex;
         align-items: center;
         padding: 10px 1rem;
-        gap: 9rem;
+        justify-content: space-between;
+        /* gap: 9rem; */
     }
     /* It stops here */
 } 
